@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:backgroundTint="@color/dark_grey"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/passwordTv"
+        android:layout_width="310dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/tvborder"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <!--<ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="672dp"
+            android:onClick="openNote"
+            android:src="@drawable/notes"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="672dp"
+            android:onClick="ndatabase"
+            android:src="@drawable/database"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+
+            android:layout_marginTop="712dp"
+            android:background="@drawable/bottom_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="728dp"
+            android:onClick="home"
+            android:src="@drawable/pw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="112dp"
+            android:onClick="pdatabase"
+            android:src="@drawable/db"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:max="25"
+            android:min="8"
+            android:progress="10"
+            android:progressTint="@color/mate_red"
+            android:thumbTint="@color/mate_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/passwordLengthTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Length: 5"
+            android:textColor="@color/mate_red"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+        <Button
+            android:id="@+id/cpyBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="550dp"
+            android:backgroundTint="@color/light_grey"
+            android:onClick="copytext"
+            android:text="copy"
+            android:textColor="@color/dark_grey"
+            android:textSize="20dp"
+            app:cornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/generateBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/light_grey"
+            android:text="Generate"
+            android:textColor="@color/dark_grey"
+            android:textSize="20dp"
+            app:cornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Password Generator"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

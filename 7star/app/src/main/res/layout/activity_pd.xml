@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".pd">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/save" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="@drawable/bottom_bar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="300dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/tvborder"
+                android:hint="Email/Username"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="300dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/tvborder"
+                android:hint="Password"
+                android:padding="15dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_email" />
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/dark_grey"
+                android:elevation="10dp"
+                android:text="save"
+                android:textColor="@color/light_grey"
+                android:textSize="20dp"
+                app:cornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_password" />
+
+            <Button
+                android:id="@+id/button_view"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/dark_grey"
+                android:text="view acc"
+                android:textColor="@color/light_grey"
+                android:textSize="20dp"
+                app:cornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
